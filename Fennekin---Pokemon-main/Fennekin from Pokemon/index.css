@@ -15,6 +15,7 @@
 
 body{
     height: 100vh;
+    width: 100%;
     background: linear-gradient(var(--primary-color), #e5a134);
     display: flex;
     flex-direction: column;
@@ -60,18 +61,22 @@ main{
     left: 7vw;
 }
 
-.container{
+.container--teste{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     color: var(--secundary-color);
+    width: 40%;
+    gap: 15px;
+    margin-top: 20px;
 }
+
 
 .fenneki--image{
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 70%;
     height: 50vh; /*Tamanhdo do fennekin */
     transform: translate(-50%, -50%);
 }
@@ -112,12 +117,12 @@ main{
 
 h2{
     color: white;
+    align-self: flex-start;
     
 }
 
 p{
     color: rgb(44, 25, 25);
-
     font-family: "Tenor Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
