@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Francois+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Francois+One&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ /*Cor de fundo*/
+    --primary-color: #b14b1f;
+    --secondary-color: #dfbca2;
+} 
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(var(--primary-color), #e5a134);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 64px;
+    font-family: 'Righteous', cursive; /*Fonte */
+}
+
+header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.pokeball{ /*Ajuste do tamanho da logo*/
+    width: 2.5rem;
+    margin: 10px;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container--title{/*Configuração do título*/
+    position: relative;
+    text-align: center;
+}
+
+.title--text{/*Nome do personagem*/
+    font-size: 17vw; 
+    color: black; 
+}
+
+
+.title--transparent{/*Fundo do título*/
+    position: absolute;
+    font-size: 19vw;
+    top: -15%; /*Distanciamento referente a altuta da sobra para o título*/
+    opacity: 0.3; /*Nível de trnsparencia*/
+    left: 7vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: var(--secundary-color);
+}
+
+.fenneki--image{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    height: 50vh; /*Tamanhdo do fennekin */
+    transform: translate(-50%, -50%);
+}
+
+.container div{
+    width: 55%;
+    z-index: 1;
+}
+
+.container h2{
+    font-size: 4vh;
+    color: white;
+    text-align: start;
+    margin: 10px;
+}
+
+.container{
+    color: white;
+    font-size: 2.5vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.action{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    height: 100px;
+}
+
+.action a{
+    font-size: 48px;
+    color:  white;
+    text-decoration: none;
+}
+
+h2{
+    color: white;
+    
+}
+
+p{
+    color: rgb(44, 25, 25);
+
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{ /*botão*/
+    border-radius: 22px;
+    height: 50px;
+    width: 150px;
+    background-color: #141413;
+    color: white;
+
+/*Fontes----------------------------------*/
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer{
+    height: 50px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
